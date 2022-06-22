@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
+<script>
+    class Temperature{
+        celsius;
+        constructor(celsius) {
+            this.celsius=celsius
+        }
+        fahrenheit(){
+            return 9/5 * this.celsius+32
+        }
+        kelvin(){
+            return this.celsius+237.15
+        }
+    }
+    let tempeature=new Temperature(25);
+    let my_fahrenheit = tempeature.fahrenheit()
+    let my_kelvins= tempeature.kelvin();
+    document.write(my_kelvins+my_fahrenheit)
+</script>
+</body>
+</html>
